@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{040D6017-3C75-40C2-894F-BCC36AF7AA21}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Evade</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;EVADE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;EVADE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Aatrox.cpp" />
+    <ClCompile Include="AllChampions.cpp" />
+    <ClCompile Include="Azir.cpp" />
+    <ClCompile Include="Bard.cpp" />
+    <ClCompile Include="Clipper.cpp" />
+    <ClCompile Include="Configs.cpp" />
+    <ClCompile Include="Diana.cpp" />
+    <ClCompile Include="Draven.cpp" />
+    <ClCompile Include="Ekko.cpp" />
+    <ClCompile Include="Evade.cpp" />
+    <ClCompile Include="EvadeLogic.cpp" />
+    <ClCompile Include="EvadeSpellDB.cpp" />
+    <ClCompile Include="Fizz.cpp" />
+    <ClCompile Include="Galio.cpp" />
+    <ClCompile Include="JarvanIV.cpp" />
+    <ClCompile Include="Karma.cpp" />
+    <ClCompile Include="Lucian.cpp" />
+    <ClCompile Include="Lulu.cpp" />
+    <ClCompile Include="Lux.cpp" />
+    <ClCompile Include="Malzahar.cpp" />
+    <ClCompile Include="Managers.cpp" />
+    <ClCompile Include="OnLoad.cpp" />
+    <ClCompile Include="Orianna.cpp" />
+    <ClCompile Include="PathFinding.cpp" />
+    <ClCompile Include="PluginSDK.cpp" />
+    <ClCompile Include="Poppy.cpp" />
+    <ClCompile Include="RekSai.cpp" />
+    <ClCompile Include="Riven.cpp" />
+    <ClCompile Include="Sion.cpp" />
+    <ClCompile Include="SpellDB.cpp" />
+    <ClCompile Include="SpellDetector.cpp" />
+    <ClCompile Include="SpellInstance.cpp" />
+    <ClCompile Include="Syndra.cpp" />
+    <ClCompile Include="Taric.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Viktor.cpp" />
+    <ClCompile Include="Yasuo.cpp" />
+    <ClCompile Include="Yorick.cpp" />
+    <ClCompile Include="Zac.cpp" />
+    <ClCompile Include="Zed.cpp" />
+    <ClCompile Include="Zilean.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Clipper.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Configs.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Evade.h" />
+    <ClInclude Include="EvadeLogic.h" />
+    <ClInclude Include="Evader.h" />
+    <ClInclude Include="EvadeSpellData.h" />
+    <ClInclude Include="EvadeSpellDB.h" />
+    <ClInclude Include="HiuManager.h" />
+    <ClInclude Include="IChampionManager.h" />
+    <ClInclude Include="JPS.h" />
+    <ClInclude Include="LPPConstants.h" />
+    <ClInclude Include="ObjManager.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="PathFinding.h" />
+    <ClInclude Include="PathFollow.h" />
+    <ClInclude Include="PluginData.h" />
+    <ClInclude Include="PluginSDK.h" />
+    <ClInclude Include="Polygons.h" />
+    <ClInclude Include="SpellBlocker.h" />
+    <ClInclude Include="SpellData.h" />
+    <ClInclude Include="SpellDB.h" />
+    <ClInclude Include="SpellDetector.h" />
+    <ClInclude Include="SpellInstance.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Vector3.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

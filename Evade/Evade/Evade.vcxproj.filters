@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="OnLoad.cpp" />
+    <ClCompile Include="PluginSDK.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Configs.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Clipper.cpp">
+      <Filter>Helpers\Clipper Library</Filter>
+    </ClCompile>
+    <ClCompile Include="EvadeSpellDB.cpp">
+      <Filter>Spells\Database\Evade Spells</Filter>
+    </ClCompile>
+    <ClCompile Include="Aatrox.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Azir.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Bard.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Diana.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Draven.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Ekko.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Fizz.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Galio.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="JarvanIV.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Karma.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Lucian.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Lulu.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Lux.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Malzahar.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Orianna.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Poppy.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="RekSai.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Riven.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sion.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Syndra.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Taric.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Viktor.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Yasuo.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Yorick.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Zac.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Zed.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Zilean.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="AllChampions.cpp">
+      <Filter>Spells\Champions</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellDB.cpp">
+      <Filter>Spells\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellDetector.cpp">
+      <Filter>Spells\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellInstance.cpp">
+      <Filter>Spells</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Evade.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFinding.cpp">
+      <Filter>PathFinding\AStar</Filter>
+    </ClCompile>
+    <ClCompile Include="EvadeLogic.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{7d84017f-cd89-43a1-8ae6-410b3c256c0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells">
+      <UniqueIdentifier>{22b54007-564c-4cf1-a5d9-4017976c6894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{ba1fb051-2fe8-4266-9de7-584a6e2abc5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers\Clipper Library">
+      <UniqueIdentifier>{283144b1-9355-439f-91c5-cab58bc888d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Champions">
+      <UniqueIdentifier>{b83c9d3f-38ca-4f06-97b2-e1bc8df48623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{e46b098c-db19-4567-b201-fc749ac322b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Database">
+      <UniqueIdentifier>{75d5104e-d7a1-4170-ab58-dc36e86f885b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spells\Database\Evade Spells">
+      <UniqueIdentifier>{c0ef027e-a605-4e3a-823e-b61d595c5684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{95d417f4-5b5a-4977-978a-6da628a1ee4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathFinding">
+      <UniqueIdentifier>{22c56096-1a62-4728-9eff-70f5c95cd6a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathFinding\AStar">
+      <UniqueIdentifier>{ecc5cc9b-095e-4fa0-9f22-2076c037db0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LPPConstants.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginData.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginSDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Configs.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygons.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Clipper.h">
+      <Filter>Helpers\Clipper Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadeSpellData.h">
+      <Filter>Spells\Database\Evade Spells</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadeSpellDB.h">
+      <Filter>Spells\Database\Evade Spells</Filter>
+    </ClInclude>
+    <ClInclude Include="IChampionManager.h">
+      <Filter>Spells\Champions</Filter>
+    </ClInclude>
+    <ClInclude Include="HiuManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellData.h">
+      <Filter>Spells\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellDB.h">
+      <Filter>Spells\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellDetector.h">
+      <Filter>Spells\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellInstance.h">
+      <Filter>Spells</Filter>
+    </ClInclude>
+    <ClInclude Include="Evade.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellBlocker.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Evader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>PathFinding</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
+      <Filter>PathFinding</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFollow.h">
+      <Filter>PathFinding</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFinding.h">
+      <Filter>PathFinding\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="JPS.h">
+      <Filter>PathFinding\AStar</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadeLogic.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
