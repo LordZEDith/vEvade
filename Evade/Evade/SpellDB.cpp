@@ -412,7 +412,7 @@ SpellDB::SpellDB()
 #pragma endregion
 
 #pragma region Quinn
-	Spells.push_back(CreateSpell()->_ChampName("Quinn")->_MenuName("QuinnQ")->_MissileName("QuinnQ")->_SpellName("QuinnQ")->_DangerValue(2)->_MissileSpeed(1550)->_Range(1050)->_Radius(60)->_FixedRange(true)->_CollisionObjects(kCollidesWithMinions | kCollidesWithHeroes | kCollidesWithYasuoWall));
+	Spells.push_back(CreateSpell()->_ChampName("Quinn")->_MenuName("QuinnQ")->_MissileName("QuinnQ")->_SpellName("QuinnQ")->_Slot(kSlotQ)->_Type(ST_Line)->_DangerValue(2)->_Delay(313)->_MissileSpeed(1550)->_Range(1050)->_Radius(60)->_AddHitbox(true)->_FixedRange(true)->_CollisionObjects(kCollidesWithMinions | kCollidesWithHeroes | kCollidesWithYasuoWall));
 #pragma endregion
 
 #pragma region RekSai
@@ -489,9 +489,9 @@ SpellDB::SpellDB()
 
 #pragma region Syndra
 	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_MenuName("SyndraQ")->_MissileName("SyndraQSpell")->_SpellName("SyndraQ")->_DangerValue(2)->_Delay(650)->_Type(ST_Circle)->_Range(825)->_Radius(180)->_MissileDelayed(true));
-	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_DangerValue(2)->_MenuName("SyndraW")->_SpellName("SyndraWCast")->_MissileSpeed(1500)->_Slot(kSlotW)->_Type(ST_Circle)->_Range(950)->_Radius(210));
-	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_DangerValue(2)->_MenuName("SyndraE")->_SpellName("SyndraE")->_MissileSpeed(2500)->_Slot(kSlotE)->_Range(650)->_Radius(40)->_Type(ST_MissileCone)->_DontCross(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
-	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_DangerValue(2)->_MenuName("SyndraEMax")->_SpellName("SyndraE5")->_MissileSpeed(2500)->_Slot(kSlotE)->_Range(650)->_Radius(60)->_Type(ST_MissileCone)->_DontCross(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
+	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_DangerValue(2)->_MenuName("SyndraW")->_SpellName("SyndraWCast")->_MissileSpeed(1450)->_Slot(kSlotW)->_Type(ST_Circle)->_Range(950)->_Radius(210)->_Delay(250));
+	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_DangerValue(2)->_MenuName("SyndraE")->_SpellName("SyndraE")->_MissileSpeed(2000)->_Slot(kSlotE)->_Range(950)->_Radius(100)->_Type(ST_MissileCone)->_DontCross(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
+	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_DangerValue(2)->_MenuName("SyndraEMax")->_SpellName("SyndraE5")->_MissileSpeed(2000)->_Slot(kSlotE)->_Range(950)->_Radius(100)->_Type(ST_MissileCone)->_DontCross(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
 	Spells.push_back(CreateSpell()->_ChampName("Syndra")->_DangerValue(2)->_MenuName("SyndraEQ")->_SpellName("SyndraEQ")->_Delay(0)->_MissileSpeed(2000)->_Slot(kSlotE)->_Range(1300)->_Radius(55)->_DontCheckForDuplicates(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
 #pragma endregion
 
@@ -547,7 +547,7 @@ SpellDB::SpellDB()
 #pragma endregion
 
 #pragma region Varus
-	Spells.push_back(CreateSpell()->_ChampName("Varus")->_MenuName("VarusQ")->_MissileName("VarusQMissile")->_SpellName("VarusQ")->_DangerValue(2)->_Delay(0)->_MissileSpeed(1900)->_Range(20000)->_Radius(70)->_MissileOnly(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
+	Spells.push_back(CreateSpell()->_ChampName("Varus")->_MenuName("VarusQ")->_MissileName("VarusQMissile")->_SpellName("VarusQ")->_DangerValue(2)->_Type(ST_Line)->_Delay(250)->_Slot(kSlotQ)->_MissileSpeed(1850)->_Range(1625)->_Radius(70)->_AddHitbox(true)->_FixedRange(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
 	Spells.push_back(CreateSpell()->_ChampName("Varus")->_MenuName("VarusE")->_MissileName("VarusEMissile")->_SpellName("VarusE")->_DangerValue(2)->_MissileSpeed(1500)->_Slot(kSlotE)->_Range(925)->_Radius(260)->_Type(ST_Circle)->_ExtraDelay(550)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
 	Spells.push_back(CreateSpell()->_ChampName("Varus")->_MenuName("VarusR")->_MissileName("VarusRMissile")->_SpellName("VarusR")->_DangerValue(3)->_MissileSpeed(1950)->_Slot(kSlotR)->_Range(1250)->_Radius(120)->_FixedRange(true)->_IsDangerous(true)->_CollisionObjects(kCollidesWithHeroes | kCollidesWithYasuoWall));
 #pragma endregion
