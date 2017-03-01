@@ -109,7 +109,7 @@ PLUGIN_API void OnLoad(IPluginSDK* PluginSDK)
 
 	Evade::OnGameLoad();
 
-	GUtility->CreateDebugConsole();
+	//GUtility->CreateDebugConsole();
 }
 
 PLUGIN_API void OnUnload()
