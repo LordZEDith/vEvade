@@ -146,6 +146,7 @@ bool Evade::OnIssueOrder(IUnit* Source, DWORD OrderIdx, Vec3* Position, IUnit* T
 void Evade::OnUpdate()
 {
 	EvadeLogic->OnGameUpdate();
+	Configs->KeyTurnOnOff();
 }
 
 void Evade::UpdateSpells()

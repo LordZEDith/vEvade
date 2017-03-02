@@ -95,7 +95,7 @@ void EvadeMenuOptions::LoadMenuOptions()
 			if (j->TrapName.size() != 0)
 				Evade::OnTrapSpells[j->TrapName] = j;
 
-			LoadSpecialSpell(j);
+			LoadSpecialSpell(j);			
 
 			std::string szIdentifier = "S_" + j->MenuName;
 
@@ -155,6 +155,7 @@ void EvadeMenuOptions::LoadMenuOptions()
 	DrawStatus = pDraw->CheckBox("Draw Status", true);
 
 	Enabled = EvadeParent->CheckBox("Enabled", true);
+	Enabledkey = EvadeParent->AddKey("Turn ON - OFF", 75);
 	DodgeDangerous = EvadeParent->AddKey("Dodge Only Dangerous Key", VK_MBUTTON);
 }
 
@@ -209,4 +210,30 @@ void EvadeMenuOptions::LoadSpecialSpell(SpellData* Args)
 		ChampionManagers[Args->ChampName]->LoadSpecialSpells(Args);
 
 	ChampionManagers["AllChampions"]->LoadSpecialSpells(Args);
+}
+
+void EvadeMenuOptions::KeyTurnOnOff()
+{
+	keystate = GetAsyncKeyState(Enabledkey->GetInteger());
+
+	if (keystate < 0)
+	{
+		if (KeyWasDown == false)
+		{			
+			if (Enabled->GetInteger() == 0)
+			{
+				Enabled->UpdateInteger(1);
+			}
+			else
+			{
+				Enabled->UpdateInteger(0);
+			}
+
+			KeyWasDown = true;
+		}
+	}
+	else
+	{
+		KeyWasDown = false;
+	}
 }

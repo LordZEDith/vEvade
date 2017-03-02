@@ -32,6 +32,7 @@ struct EvadeMenuOptions
 	void UnloadMenu();
 	void LoadSpecialSpellPlugins();
 	void LoadSpecialSpell(SpellData* Args);
+	void KeyTurnOnOff();
 
 	// Constants
 	int CrossingTime;
@@ -58,6 +59,9 @@ struct EvadeMenuOptions
 	IMenuOption* DrawSpells;
 	IMenuOption* DrawStatus;
 	IMenuOption* Enabled;
+	IMenuOption* Enabledkey;
+	short keystate;
+	bool KeyWasDown = false;
 
 	// Custom Spells
 
