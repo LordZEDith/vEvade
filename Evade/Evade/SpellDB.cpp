@@ -95,7 +95,7 @@ SpellDB::SpellDB()
 #pragma endregion
 
 #pragma region Blitzcrank
-	Spells.push_back(CreateSpell()->_ChampName("Blitzcrank")->_MenuName("BlitzcrankQ")->_SpellName("RocketGrab")->_DangerValue(4)->_MissileName("RocketGrabMissile")->_MissileSpeed(1800)->_Range(1050)->_Radius(70)->_FixedRange(true)->_IsDangerous(true)->_CollisionObjects(kCollidesWithMinions | kCollidesWithHeroes | kCollidesWithYasuoWall));
+	Spells.push_back(CreateSpell()->_ChampName("Blitzcrank")->_MenuName("BlitzcrankQ")->_SpellName("RocketGrab")->_DangerValue(4)->_MissileName("RocketGrabMissile")->_MissileSpeed(1800)->_Range(1050)->_Radius(85)->_FixedRange(true)->_IsDangerous(true)->_CollisionObjects(kCollidesWithMinions | kCollidesWithHeroes | kCollidesWithYasuoWall));
 	Spells.push_back(CreateSpell()->_ChampName("Blitzcrank")->_DangerValue(2)->_MenuName("BlitzcrankR")->_SpellName("StaticField")->_AddHitbox(false)->_Slot(kSlotR)->_Type(ST_Circle)->_Radius(600));
 #pragma endregion
 
