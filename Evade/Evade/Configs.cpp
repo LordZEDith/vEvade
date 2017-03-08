@@ -215,10 +215,11 @@ void EvadeMenuOptions::LoadSpecialSpell(SpellData* Args)
 void EvadeMenuOptions::KeyTurnOnOff()
 {
 	keystate = GetAsyncKeyState(Enabledkey->GetInteger());
-
+	if (GUtility->IsLeagueWindowFocused() == false || GGame->IsChatOpen() || GGame->IsScoreboardOpen() || GGame->IsShopOpen())
+		return;
 	if (keystate < 0)
 	{
-		if (KeyWasDown == false)
+		if (KeyWasDown == false )
 		{			
 			if (Enabled->GetInteger() == 0)
 			{
