@@ -49,7 +49,7 @@ namespace Util
 
 	static bool Move(Vec2 Pos)
 	{
-		return GGame->IssueOrder(GEntityList->Player(), kMoveTo, Get3DPoint(Pos));
+		return GGame->IssueOrderEx(GEntityList->Player(), kMoveTo, Get3DPoint(Pos), false);
 	}
 
 	static bool ShieldCheck()

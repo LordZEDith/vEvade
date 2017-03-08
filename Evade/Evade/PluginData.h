@@ -48,6 +48,13 @@ struct AdvPredictionOutput
 	std::vector<IUnit*> AoETargetsHit;	// Vector of all targets hit when using AoE prediction
 };
 
+struct PredictionOutput
+{
+	Vec3					CastPosition;
+	std::vector<IUnit*>		EnemiesHit;
+	ePredictionChance		HitChance;
+};
+
 struct NavigationPath
 {
 	int			CurrentWaypoint_;
@@ -106,6 +113,18 @@ struct CastedSpell
 	Vec3	EndPosition_;
 };
 
+struct LastCastedSpellArgs
+{
+	CastedSpell		Data;
+	int				Tick;
+};
+
+struct SpellInfo
+{
+	char Name[64];
+	char DisplayName[64];
+};
+
 struct ItemData
 {
 	char Name_[64];
@@ -130,6 +149,11 @@ struct SpellParams
 	float		Width_;
 	bool		Collision_;
 	eSpellType	SpellType_;
+};
+
+struct JungleNotifyData
+{
+	Vec3 Position;
 };
 
 class IUnit
@@ -246,6 +270,13 @@ public:
 	virtual bool IsDashing() = 0;
 	virtual bool CreatePath(Vec3 const& EndPosition, std::vector<Vec3>& Out) = 0;
 	virtual bool CreatePath2D(Vec2 const& EndPosition, std::vector<Vec2>& Out) = 0;
+	virtual const char* GetBaseSkinName() = 0;
+	virtual float GetBonusMana() = 0;
+	virtual LastCastedSpellArgs* GetLastCastedSpell() = 0;
+	virtual int GetKills() = 0;
+	virtual int GetDeaths() = 0;
+	virtual int GetAssists() = 0;
+	virtual float GetExperience() = 0;
 };
 
 #endif // PluginData_h__
