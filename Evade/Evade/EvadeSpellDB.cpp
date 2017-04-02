@@ -467,7 +467,7 @@ EvadeSpellDB::EvadeSpellDB()
 #pragma endregion
 
 	if (GEntityList->Player()->GetSpellSlot("SummonerFlash") != kSlotUnknown)
-		Spells.push_back(new BlinkData("Flash", GEntityList->Player()->GetSpellSlot("SummonerFlash"), 425, 100, 5));
+		Spells.push_back(new BlinkData("Flash", GEntityList->Player()->GetSpellSlot("SummonerFlash"), 400, 100, 5));
 
 	auto pZhonyas = new EvadeSpellData("Zhonyas", 5);
 	pZhonyas->IsItem = true;

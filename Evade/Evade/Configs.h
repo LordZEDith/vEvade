@@ -59,6 +59,7 @@ struct EvadeMenuOptions
 	IMenuOption* DrawSpells;
 	IMenuOption* DrawStatus;
 	IMenuOption* Enabled;
+	IMenuOption* DangerousDodge;
 	IMenuOption* Enabledkey;
 	short keystate;
 	bool KeyWasDown = false;

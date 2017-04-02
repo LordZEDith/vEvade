@@ -156,6 +156,7 @@ void EvadeMenuOptions::LoadMenuOptions()
 
 	Enabled = EvadeParent->CheckBox("Enabled", true);
 	Enabledkey = EvadeParent->AddKey("Turn ON - OFF", 75);
+	DangerousDodge = EvadeParent->CheckBox("Use Dodge Dangerous Only", false);
 	DodgeDangerous = EvadeParent->AddKey("Dodge Only Dangerous Key", VK_MBUTTON);
 }
 

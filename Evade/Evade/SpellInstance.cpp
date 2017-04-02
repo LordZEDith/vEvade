@@ -124,7 +124,7 @@ bool SpellInstance::IsEnabled()
 
 	cachedValueTick = GGame->TickCount();
 
-	if (GetAsyncKeyState(Configs->DodgeDangerous->GetInteger()) && !GetValue("IsDangerous")->Enabled())
+	if ((GetAsyncKeyState(Configs->DodgeDangerous->GetInteger()) || Configs->DangerousDodge->Enabled()) && !GetValue("IsDangerous")->Enabled())
 	{
 		cachedValue = false;
 		return cachedValue;
